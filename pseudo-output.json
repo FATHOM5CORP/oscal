@@ -1,0 +1,56 @@
+			{
+				"controls": [
+					{
+						"id": "$A",
+						"class": "SP800-171",
+						"title": "$B",
+						"props": [
+							{
+								"name": "label",
+								"value": "$A"
+							},
+							{
+								"name": "label",
+								"value": "$A",
+								"class": "sp800-171a"
+							},
+							{
+								"name": "sort-id",
+								"value": "$A"
+							}
+						],
+						"parts": [
+							{
+								"id": "$A_smt",
+								"name": "statement",
+								"prose": "$B"
+							},
+							{
+								"id": "$A_obj",
+								"name": "assessment-objective",
+								"props": [
+									{
+										"name": "label",
+										"value": "$A",
+										"class": "sp800-171a"
+									}
+								],
+								"parts": [
+									{
+										"id": "$A_obj.$D(i)",
+										"name": "assessment-objective",
+										"props": [
+											{
+												"name": "label",
+												"value": "$C(i)[$D(i)]",
+												"class": "sp800-171a"
+											}
+										],
+										"prose": "$E(i)"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
