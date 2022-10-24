@@ -1,28 +1,36 @@
-# FATHOM5 OSCAL Work
+# FATHOM5 EXTENDS OSCAL
+
+## Purpose
+
+FATHOM5 supports the community advancement of NIST's OSCAL initiatives. This repo provides custom OSCAL content and supporting tools that enable compliance automation. Our first release includes an OSCAL Catalog, OSCAL Profile, and supporting data transformation scripts for NIST 800-171, forming the basis for compliance automation for US Controlled Unclassified Information. 
 
 ## Background
 
 The [Open Security Controls Assessment Language (OSCAL)](https://pages.nist.gov/OSCAL/) created and maintained by NIST is the state of the art for compliance automation. OSCAL provides a mechanism for turning cybersecurity artifacts from static PDFs, Excel spreadsheets, and Word documents into machine-readable code. Reformating the data in this way is a critical first step to unlock the power of automation. 
 
-![oscal-models](https://user-images.githubusercontent.com/103941493/196271319-7b26d9b5-ae15-41cf-8592-8f8eb5335810.png)
+| ![oscal-models](https://user-images.githubusercontent.com/103941493/196271319-7b26d9b5-ae15-41cf-8592-8f8eb5335810.png) |
+|:--:|
+| <b> Image Credits - NIST </b> |
 
 As illustrated above, all OSCAL models must derive content from an OSCAL Catalog and OSCAL Profile.
 
 [NIST provides this source material for SP 800-53](https://github.com/usnistgov/oscal-content/tree/main/nist.gov) (AKA Risk Management Framework). 
 
-<img width="964" alt="profile-catalog-example" src="https://user-images.githubusercontent.com/103941493/196271507-93f1c165-6f26-448e-b40c-4c5d4e42add3.png">
+| <img width="964" alt="profile-catalog-example" src="https://user-images.githubusercontent.com/103941493/196271507-93f1c165-6f26-448e-b40c-4c5d4e42add3.png"> |
+|:--:|
+| <b> Image Credits - NIST </b> |
 
 ## Challenge for US Controlled Unclassified Information Compliance Automation
 
-All DoD contractors processing, storing, or transmitting CUI must follow [NIST SP 800-171 (Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations)](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final). However, unlike for RMF, NIST has not yet published the same content for SP 800-171.
+All DoD contractors processing, storing, or transmitting CUI must follow [NIST SP 800-171 (Protecting Controlled Unclassified Information in Nonfederal Systems and Organizations)](https://csrc.nist.gov/publications/detail/sp/800-171/rev-2/final). However, unlike for RMF, NIST has not yet published similar OSCAL content for SP 800-171.
 
 ## Solution for US CUI Compliance Automation
 
 If DoD contractors want to leverage the state of the art to automate CUI Protection compliance, this project provides the fundamental building blocks.
 
-Under /tools, you'll find a parser we wrote to take a raw tab-delimeted CSV of the 800-171 requirements and reformat the data into OSCAL-compliant JSON.
+Under <code>/tools</code>, you'll find a parser we wrote to take a raw tab-delimeted CSV of the 800-171 requirements and reformat the data into OSCAL-compliant JSON.
 
-Under /content/SP800-171, you'll find a resulting OSCAL Catalog and OSCAL Profile for 800-171.
+Under <code>/content/SP800-171</code>, you'll find a resulting OSCAL Catalog and OSCAL Profile for 800-171.
 
 This content is being freely distributed under CC0 to help you automate your compliance for CUI.
 
@@ -34,7 +42,7 @@ We developed this OSCAL Content to be readily ingestable by [EasyDynamics' OSCAL
 
 NOTE: The above command uses backslashes for the local working directory, assuming you're running from Windows. If running from Linux, use forward slashes.
 
-Then open up a browser to localhost:8080.
+Then open up a browser to <code>localhost:8080</code>.
 
 In either case, you'll see our OSCAL content for 800-171.
 
