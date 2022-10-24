@@ -40,6 +40,8 @@ In either case, you'll see our OSCAL content for 800-171.
 
 ![oscal-800-171-viewed](https://user-images.githubusercontent.com/103941493/196277327-8e3d9204-f8c6-4a54-a032-fc52406cc557.png)
 
+We also include a [copy of the Catalog converted to HTML](https://github.com/FATHOM5/oscal/blob/main/content/SP800-171/oscal-content/catalogs/NIST_SP-800-171_rev2_html_preview.html), which may be downloaded and viewed in any web browser.
+  
 ## Including the SP 800-171 OSCAL Content in your Organization's OSCAL Models
 
 You can follow NIST's guidance to import the 800-171 OSCAL Profile into your organization's OSCAL Models. For instance, [this page describes how to import a profile for your System Security Plan](https://pages.nist.gov/OSCAL/reference/latest/system-security-plan/json-reference/#/system-security-plan/import-profile).
