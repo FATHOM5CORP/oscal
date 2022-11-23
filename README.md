@@ -2,7 +2,7 @@
 
 ## Purpose
 
-FATHOM5 supports the community advancement of NIST's OSCAL initiatives. This repo provides custom OSCAL content and supporting tools that enable compliance automation. Our first release includes an OSCAL Catalog, OSCAL Profile, and supporting data transformation scripts for NIST 800-171, forming the basis for compliance automation for US Controlled Unclassified Information. 
+FATHOM5 supports the community advancement of NIST's OSCAL initiatives. This repo provides custom developed content and supporting tools that enable compliance automation using NIST's OSCAL. Our first release includes an OSCAL Catalog, OSCAL Profile, and supporting data transformation scripts for NIST 800-171, forming the basis for compliance automation for US Controlled Unclassified Information. 
 
 ## Background
 
